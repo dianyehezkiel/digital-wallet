@@ -1,0 +1,117 @@
+import { SpendCategory } from "../spending-category"
+
+type Transaction = {
+  id: string,
+  type: SpendCategory,
+  date: Date,
+  desc: string,
+  price: number,
+}
+
+export const latestTransactions: Transaction[] = [
+  {
+    id: '0',
+    type: 'utilities',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah ahahahahahaha ahahahaha ahahahah ahahahah',
+    price: 326800,
+  },
+  {
+    id: '1',
+    type: 'clothing',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '2',
+    type: 'debt',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '3',
+    type: 'donations-gifts',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '4',
+    type: 'education',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '5',
+    type: 'entertainment',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '6',
+    type: 'food',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '7',
+    type: 'healthcare',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '8',
+    type: 'housing',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '9',
+    type: 'insurance',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '10',
+    type: 'personal',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '11',
+    type: 'retirement',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '12',
+    type: 'savings',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '13',
+    type: 'supplies',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+  {
+    id: '14',
+    type: 'transportation',
+    date: new Date(2022, 11, 17),
+    desc: 'Minimarket Anugerah',
+    price: 326800,
+  },
+]

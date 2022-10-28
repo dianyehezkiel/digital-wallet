@@ -49,8 +49,8 @@ export default function RootLayout({
             <div>
               <p className='px-6 py-4 text-gray-400'>Menu</p>
               <nav>
-                {mainMenus.map(({name, route, displayName, displayIcon: Icon, color}) => (
-                  <Link onClick={() => setCurrentPage(route)} key={name} href={route} scroll={false}>
+                {mainMenus.map(({id, route, displayName, displayIcon: Icon, color}) => (
+                  <Link onClick={() => setCurrentPage(route)} key={id} href={route} scroll={false}>
                     <div className={classNames('flex gap-4 px-6 py-4 border-l-2', color.border, currentPage === route ? 'bg-base-100' : 'text-gray-400 border-l-transparent')}>
                       <div className={classNames('w-8 h-8 rounded-xl p-2', color.bg)}>
                         <Icon className='w-4 h-4 fill-base-content' />
@@ -65,8 +65,8 @@ export default function RootLayout({
             <div>
               <p className='px-6 py-4 text-gray-400'>Other Menu</p>
               <nav>
-                {otherMenus.map(({name, route, displayName, displayIcon: Icon, color}) => (
-                  <Link onClick={() => setCurrentPage(route)} key={name} href={route} scroll={false}>
+                {otherMenus.map(({id, route, displayName, displayIcon: Icon, color}) => (
+                  <Link onClick={() => setCurrentPage(route)} key={id} href={route} scroll={false}>
                     <div className={classNames('flex gap-4 px-6 py-4 border-l-2', color.border, currentPage === route ? 'bg-base-100' : 'text-gray-400 border-l-transparent')}>
                       <div className={classNames('w-8 h-8 rounded-xl p-2', color.bg)}>
                         <Icon className='w-4 h-4 fill-base-content' />
@@ -79,7 +79,7 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        <div className="flex-grow p-8 bg-base-100 rounded-tl-3xl">
+        <div className="flex-grow h-screen overflow-y-auto p-8 bg-base-100 rounded-tl-3xl">
           {children}
         </div>
       </body>

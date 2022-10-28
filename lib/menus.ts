@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/24/solid';
 
 type Menu = {
-  name: string;
+  id: string;
   route: string;
   displayName: string;
   displayIcon: typeof HomeIcon;
@@ -20,7 +20,7 @@ type Menu = {
 
 export const mainMenus: Menu[] = [
   {
-    name: 'dashboard',
+    id: 'dashboard',
     route: '/',
     displayName: 'Dashboard',
     displayIcon: HomeIcon,
@@ -30,7 +30,7 @@ export const mainMenus: Menu[] = [
     },
   },
   {
-    name: 'send-money',
+    id: 'send-money',
     route: `/send-money`,
     displayName: 'Send Money',
     displayIcon: PaperAirplaneIcon,
@@ -40,7 +40,7 @@ export const mainMenus: Menu[] = [
     },
   },
   {
-    name: 'top-up',
+    id: 'top-up',
     route: '/top-up',
     displayName: 'Top-up Wallet',
     displayIcon: CreditCardIcon,
@@ -50,7 +50,7 @@ export const mainMenus: Menu[] = [
     },
   },
   {
-    name: 'withdraw',
+    id: 'withdraw',
     route: '/withdraw',
     displayName: 'Withdraw',
     displayIcon: BanknotesIcon,
@@ -60,7 +60,7 @@ export const mainMenus: Menu[] = [
     },
   },
   {
-    name: 'bills',
+    id: 'bills',
     route: '/bills',
     displayName: 'Bill Payment',
     displayIcon: WalletIcon,
@@ -70,7 +70,7 @@ export const mainMenus: Menu[] = [
     },
   },
   {
-    name: 'settings',
+    id: 'settings',
     route: '/settings',
     displayName: 'Settings',
     displayIcon: Cog6ToothIcon,
@@ -83,7 +83,7 @@ export const mainMenus: Menu[] = [
 
 export const otherMenus: Menu[] = [
   {
-    name: 'transactions',
+    id: 'transactions',
     route: '/transactions',
     displayName: 'Transactions History',
     displayIcon: ArrowsUpDownIcon,
@@ -93,7 +93,7 @@ export const otherMenus: Menu[] = [
     },
   },
   {
-    name: 'request',
+    id: 'request',
     route: '/request',
     displayName: 'Request Payment',
     displayIcon: GiftIcon,
@@ -103,7 +103,7 @@ export const otherMenus: Menu[] = [
     },
   },
   {
-    name: 'help',
+    id: 'help',
     route: '/help',
     displayName: 'Help',
     displayIcon: QuestionMarkCircleIcon,
